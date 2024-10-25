@@ -1,0 +1,16 @@
+{
+  "name": "mono-near",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "pnpm --filter frontend dev",
+    "contract:build": "cd packages/contracts && cargo build",
+    "contract:deploy": "cd packages/contracts && cargo deploy --no-docker newtestingacctfortheshits.testnet without-init-call network-config testnet sign-with-keychain send",
+    "contract:test": "cd packages/contracts && cargo test",
+    "contract:clean": "cd packages/contracts && cargo clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
